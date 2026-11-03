@@ -9,4 +9,6 @@ This policy does not validate the request's identity or evidence, confer
 credentials, execute an action, or override the Sandbox, InkBox, audit or Git
 branch-protection boundaries. Trusted code still validates the request binding,
 approved revision and final decision, and fails closed when those are invalid
-or unavailable. Only a human-approved merged requirements revision can be used.
+or unavailable. The initial development-only revision uses a delegated automated
+review, not an independent human review. Subsequent requirements revisions need
+independent human approval before merge.
