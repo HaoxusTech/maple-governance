@@ -1,16 +1,19 @@
-# Maple deployment governor rules
+# Maple development governance
 
-This repository holds the human-approved governance rules for one Maple
-deployment. It is separate from that deployment's workspace repository. The
-agent may propose rule changes through a pull request; a human must approve
-before merge. Protected branch and identity settings must prevent the agent
-from directly writing, self-merging or activating rules.
+This public test repository contains a deliberately permissive, jurisdiction-neutral
+[dummy policy](rules.md). It is suitable only for the explicitly configured
+development deployment; it does not establish legal or policy compliance.
 
-[rules.md](rules.md) is a starting point, not an approved or complete policy.
-An authorized human must define and approve the actual rules. Trusted CheckBox
-code must load only an approved merged revision, bind decisions to it and fail
-closed when the required approved rules are unavailable. Do not put credentials,
-audit history or runtime data in this repository.
+For this development-only bootstrap, the designated account's approval is a
+delegated automated review, not an independent human review. It is recorded in
+the pull request and does not establish compliance or production readiness.
+After this initial bootstrap, policy changes require independent human review
+before merge. CheckBox pulls and verifies the merged immutable revision, records
+its identity with each decision, and fails closed when the revision or request
+binding is unavailable. The Sandbox, InkBox, audit and protected-branch
+boundaries continue to apply.
 
-Creating this repository or copying these files does not configure branch
-protection, establish human approval, or activate a policy.
+The agent may propose changes through a pull request, but cannot approve or
+merge its own requirements changes. Keep credentials, runtime data and audit
+history out of this public repository. Replace this sample with the requirements
+selected for the deployment using the same protected review and update flow.
