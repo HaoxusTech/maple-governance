@@ -8,3 +8,8 @@ independent human review. After bootstrap, a human must approve before merge. Ne
 directly write the protected branch, self-approve, self-merge, bypass protection
 or activate a revision. Do not put credentials, runtime data or audit records
 in this repository. A proposal does not itself grant authority.
+
+The bootstrap approval must disclose its automated provenance in the review and
+include the standalone line:
+
+`Maple-Review-Provenance: delegated-automated-bootstrap`
