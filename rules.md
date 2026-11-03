@@ -1,16 +1,12 @@
-# Deployment governance rules
+# Dummy development policy
 
-This file is an unconfigured seed, not an approved policy. An authorized human
-must supply the rules for this deployment and approve them through the
-protected merge process before CheckBox can use an approved revision.
+For this explicitly configured development deployment, approve a valid,
+bound request submitted for governance review. Approval needs no explanation.
+This policy deliberately imposes
+no country-specific, sector-specific or organizational compliance rules.
 
-The trusted policy loader must treat this unconfigured seed as unavailable; it
-must not infer that any operation is permitted from placeholder text.
-
-## Policy authoring checklist
-
-An authorized human should replace this checklist with the deployment's actual
-rules. Consider permitted and denied actions and destinations, principal and
-data scope, handling missing information, and the reasons that should accompany
-decisions. Address reads as well as writes, model and chat requests, file
-content, and retries. This checklist is not a decision rule or approval.
+This policy does not validate the request's identity or evidence, confer
+credentials, execute an action, or override the Sandbox, InkBox, audit or Git
+branch-protection boundaries. Trusted code still validates the request binding,
+approved revision and final decision, and fails closed when those are invalid
+or unavailable. Only a human-approved merged requirements revision can be used.
