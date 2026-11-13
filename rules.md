@@ -17,3 +17,13 @@ approved revision and final decision, and fails closed when those are invalid
 or unavailable. The initial development-only revision uses a delegated automated
 review, not an independent human review. Subsequent requirements revisions need
 independent human approval before merge.
+
+## Northstar demo release readiness
+
+For the fictional Northstar demo `live-20261113-c1` only, requests to create or
+update a release-readiness issue must include a named owner and a link to the
+release brief in the resulting issue body. Reject such requests if either is
+missing. This requirement does not apply to other issues or releases and does
+not establish production readiness or compliance. This proposal has no effect
+until independently reviewed, merged and selected as an approved immutable
+revision by CheckBox.
