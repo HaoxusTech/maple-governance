@@ -17,3 +17,14 @@ approved revision and final decision, and fails closed when those are invalid
 or unavailable. The initial development-only revision uses a delegated automated
 review, not an independent human review. Subsequent requirements revisions need
 independent human approval before merge.
+
+## Northstar demo live-20261113-a2 release readiness
+
+For the fictional Northstar demo `live-20261113-a2` only, a request to create
+or update a release-readiness issue must leave a named owner and a link to the
+release brief in the resulting issue body. Reject such a request if either
+value is missing, empty or labeled unknown. This requirement does not apply
+to other issues or releases and does not establish production readiness or
+compliance. It does not retroactively assess issues created before activation.
+This proposal has no effect until independently reviewed, merged and selected
+by CheckBox as an approved immutable requirements revision.
